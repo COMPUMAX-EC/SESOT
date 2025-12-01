@@ -6,30 +6,6 @@
 
 SESOT implements an inference engine (based on the Rete algorithm via `experta`) to guide users through a dynamic decision tree. The goal is to standardize first-level technical support, enabling fast and accurate diagnoses without the need for an internet connection.
 
-## Prerequisites
-
-* **Python 3.10+**
-* **[uv](https://github.com/astral-sh/uv):** High-performance package and project manager.
-
-### Installing `uv` (if not installed)
-
-From PyPI:
-
-```bash
-pip install uv
-```
-
-Or
-
-```bash
-# On macOS/Linux
-curl -LsSf https://astral.sh/uv/install.sh | sh
-
-# On Windows
-powershell -c "irm https://astral.sh/uv/install.ps1 | iex"
-```
-
-
 ## Installation and Setup
 
 This project uses a modern structure managed by `uv`. Manual virtual environment creation is not required.
@@ -39,6 +15,20 @@ This project uses a modern structure managed by `uv`. Manual virtual environment
 ```bash
 git clone https://github.com/COMPUMAX-EC/SESOT.git
 cd SESOT
+```
+
+### Prerequisites
+
+* **Python 3.10+**
+* **[uv](https://github.com/astral-sh/uv):** High-performance package and project manager.
+
+#### Installing `uv` (if not installed)
+1. **Installing `uv` (if not installed)**
+
+From PyPI:
+
+```bash
+pip install uv
 ```
 
 2. **Sync the environment:**
