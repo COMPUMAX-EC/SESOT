@@ -6,10 +6,10 @@ import sys
 import os
 
 # Agregar la carpeta raíz del proyecto al PYTHONPATH
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(_file_), "..")))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
-from base_conocimientos.base_conocimientos import obtener_accion
-from soporte_linea.procesador_lenguaje import procesar_entrada
+from .base_conocimientos import obtener_accion
+from .procesador_lenguaje import procesar_entrada
 
 # Función para procesar entradas en lenguaje natural
 def procesar_entrada_usuario(entrada):
@@ -25,7 +25,7 @@ def procesar_entrada_usuario(entrada):
     return solucion
 
 # Ejemplo de uso del motor de inferencia
-if _name_ == "_main_":
+if __name__ == "__main__":
     print("=" * 60)
     print("  SISTEMA EXPERTO - MANTENIMIENTO DE CPU E IMPRESORAS")
     print("  Optimizado para Raspberry Pi 3")
@@ -50,4 +50,4 @@ if _name_ == "_main_":
         print("\n" + "-" * 50)
         solucion = procesar_entrada_usuario(entrada)
         print(solucion)
-        print("-" * 50 + "\n")
+        print(f"-" * 50 + "\n")
