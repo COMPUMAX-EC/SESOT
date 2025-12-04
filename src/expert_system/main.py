@@ -30,3 +30,8 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+from django.shortcuts import render
+
+def index(request):
+    return render(request, 'expert_system/index.html')
